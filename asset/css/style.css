@@ -1,0 +1,397 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+section {
+  padding: 60px;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background-color: #f9f9f9;
+}
+
+.logo_white {
+  width: 150px;
+  object-fit: cover;
+}
+.logo_white img {
+  width: 100%;
+  height: 100%;
+}
+
+.top_header {
+  background-color: #192841;
+  border-bottom: 1px solid #F4D160;
+}
+.top_header .nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.top_header .nav_bar .list_link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.top_header .nav_bar .list_link .link_item a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+}
+.top_header .nav_bar .list_link .link_item a:hover {
+  color: #ffc400;
+}
+.top_header .nav_bar .list_link .active a {
+  color: #ffc400;
+}
+
+.banner_header {
+  height: 667px;
+  background-color: #192841;
+}
+.banner_header .box_banner {
+  height: 100%;
+}
+.banner_header .box_banner .box_introduce {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 50px;
+}
+.banner_header .box_banner .box_introduce .infor {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  color: #b9b9b9;
+}
+.banner_header .box_banner .box_introduce .infor .infor_introduce {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.banner_header .box_banner .box_introduce .infor .infor_introduce p {
+  padding-left: 4px;
+}
+.banner_header .box_banner .box_introduce .infor .name {
+  font-weight: 600;
+  font-size: 62px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.banner_header .box_banner .box_introduce .infor .carrer {
+  font-size: 48px;
+  font-weight: 800;
+}
+.banner_header .box_banner .box_introduce .infor .carrer span {
+  color: #ffc400;
+}
+.banner_header .box_banner .box_img .bd_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 70% 30% 70% 30%/30% 48% 52% 70%;
+  background: rgb(24, 97, 96);
+  background: radial-gradient(circle, rgb(24, 97, 96) 0%, rgb(244, 209, 96) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_header .box_banner .box_img .bd_img img {
+  height: 100%;
+  border-radius: 0% 0% 50% 38%;
+}
+.banner_header .box_banner .box_link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+.banner_header .box_banner .box_link .ic a {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-right: 10px;
+  border-right: 2px solid #F4D160;
+}
+.banner_header .box_banner .box_link .ic a svg {
+  width: 100%;
+  height: 100%;
+  fill: #803dff;
+}
+.banner_header .box_banner .btn_seemr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc400;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.banner_header .box_banner .btn_seemr .btn_see {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.banner_header .box_banner .btn_seemr a {
+  padding: 10px 20px;
+  color: #161616;
+}
+.banner_header .box_banner .btn_seemr span {
+  stroke: #161616;
+  stroke-width: 0.7;
+}
+
+.scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+
+.about_me {
+  background-color: #152238;
+  height: 769px;
+}
+.about_me .box_item .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+.about_me .box_item .avatar .box_img {
+  width: 100%;
+  height: 100%;
+  background-color: #ffc400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_me .box_item .avatar .box_img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.about_me .box_item .box_text {
+  color: #161616;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0 20px 20px 0;
+  padding: 20px;
+  line-height: 30px;
+}
+.about_me .box_item .box_text .left_text {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+}
+.about_me .box_item .box_text .left_text .description_me {
+  color: #161616;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+.about_me .box_item .box_text .left_text .btn_download_cv a {
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+}
+.about_me .box_item .box_text .right_text .box_skill {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.about_me .box_item .box_text .right_text .box_skill .skill {
+  width: 100%;
+  padding: 20px 40px;
+}
+.about_me .box_item .box_text .right_text .box_skill .skill .name_skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_me .box_item .box_text .right_text .box_skill .skill .name_skill .name {
+  font-weight: 600;
+}
+.about_me .box_item .box_text .right_text .box_skill .skill .range_skill hr {
+  height: 5px;
+  color: #b9b9b9;
+  background-color: #b9b9b9;
+  border-width: 0;
+  position: relative;
+  z-index: 1;
+  border-radius: 4px;
+}
+.about_me .box_item .box_text .right_text .box_skill .skill .range_skill hr::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  height: 5px;
+  border-width: 0;
+  width: 85%;
+  z-index: 100;
+}
+.about_me .box_item .box_text .right_text .box_skill .skill:nth-child(2) hr::before {
+  background-color: #192841;
+  color: #192841;
+}
+.about_me .box_item .box_text .right_text .box_skill .skill:nth-child(3) hr:nth-child(1)::before {
+  background-color: #ffc400;
+  color: #ffc400;
+}
+
+.name_label {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 900;
+  position: relative;
+  color: #fff;
+  padding-bottom: 80px;
+}
+.name_label:nth-child(2) span {
+  border-bottom: 3px solid #192841;
+}
+
+.service {
+  background-color: #192841;
+}
+.service .box_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.service .box_item .item_service {
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  gap: 30px;
+  transition: 0.2s linear;
+  background-color: #152238;
+}
+.service .box_item .item_service:hover {
+  background-color: #ffc400;
+  transform: scale(1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.service .box_item .item_service .img_service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.service .box_item .item_service .img_service img {
+  width: 100px;
+  height: 100px;
+}
+.service .box_item .item_service .text_service {
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.service .box_item .item_service .text_service .name_service {
+  font-weight: 800;
+  font-size: 24px;
+}
+.service .box_item .item_service .text_service .des_service {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+.service .box_item:hover .item_service:not(:hover) {
+  filter: blur(50%);
+}
+
+.bg_footer {
+  padding: 20px 0;
+  background-color: #192841;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
